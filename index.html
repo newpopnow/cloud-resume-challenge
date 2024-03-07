@@ -1,112 +1,130 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <title>Cloud resume challenge</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nguyen Tuan Anh's CV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <style>
-        /* p {
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-            } */
-            h1 {
-                text-align: center;
-            }
-    </style>
     <script>
 
         async function getResponse(){
-            let response = await fetch('https://jsonplaceholder.typicode.com/todos/3');
+            let response = await fetch('https://wlu1lgy12g.execute-api.ap-southeast-1.amazonaws.com/devtest/');
             let data = await response.json();
             console.log(data);
-            document.getElementById("visitor").innerHTML='You are visitor # ' + data.title;
+            document.getElementById("visitor").innerHTML='You are visitor # ' + data;
         }
         getResponse();
             
         </script>
     <body>
-    <h1>CURRICULUM VITAE</h1>
-    <p><strong>NGUYEN TUAN ANH</strong>
-        <br>Address: Hanoi, Vietnam
-        <br>Mobile: 0988 720 896
-        <br>Email: tuananh.cloud[at]outlook.com
-        <br>LinkedIn: <a href="https://www.linkedin.com/in/anhnguyenitpros">linkedin.com/in/anhnguyenitpros</a>
-    </p>
-    <h4>SUMMARY</h4>
-    <hr>
-    <p><ul>
-        <li>10+ years’s experience in IT services delivery of on-premises environment</li>
-        <li>Good knowledge of AWS services and Devops culture</li>
-    </ul>
-    </p>
-    <h4>SKILLS & TECHNOLOGIES</h4>
-    <hr>
-    <p><ul>
-        <li>Operating Systems: Windows Server, Windows 10, Ubuntu, CentOS</li>
-        <li>Cloud, SaaS: AWS, MS Azure, MS Office 365</li>
-        <li>Virtualization: VMware vSphere, Microsoft Hyper-V</li>
-        <li>Backup software: Veritas BackupExec, Veeam Backup & Replication</li>
-        <li>Server and storage: DellEMC, HPE, QNAP, Synology</li>
-        <li>Firewall and switch: Cisco, Fortinet, Meraki, Aruba</li>
-        <li>Monitoring: Solarwinds, PRTG, Zabbix</li>
-    </ul>
-    </p>
-    <h4>WORKING EXPERIENCE</h4>
-    <hr>
-    <p><ul>
-        <li><strong>08/2022 – present: System Admin – System Division.
-            <br>VinITIS JSC. Hanoi city, Vietnam</strong>
-            <br>Perform tasks that area essential for config, deploy and maintain IT systems across Private Cloud to Public Cloud, providing high availability, integrity and confidentiality
-        </li>
-        <ul>
-            <li>Collaborate with Dev team to integrate their projects into On-premise/Cloud environment</li>
-            <li>Automate the provisioning and configuration processes, from template to production-ready use</li>
-            <li>Hardening, patching system to meet Enterprise security's requirement</li>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+
+        <!-- <h1 class="cv-title">Curriculum Vitae</h1> -->
+        <div class="content">
+        <header>
+        <div class="personnel">
+            <h2>Nguyen Tuan Anh</h2>
+            <div class="title">Cloud Engineer</div>
+            <ul class="contact">
+                <li><span>A</span>Hanoi, Vietnam</li>
+                <li><span>M</span>0988 720 896</li>
+                <li><span>E</span>tuananh.cloud[at]outlook.com</li>
+                <li><span>In</span><a href="https://www.linkedin.com/in/anhnguyenitpros">linkedin.com/in/anhnguyenitpros</a></li>
+            </ul>
+        </div>
+        <div class="portrait"><img src="4124.jpeg"></div>
+            
+        
+        </header>
+
+        <h4>SUMMARY</h4>
+        
+        <p><ul>
+            <li>10+ years’s experience in IT services delivery of on-premises environment</li>
+            <li>Good knowledge of AWS services and Devops culture</li>
         </ul>
-    </p>
-    <p>
-        <li><strong>08/2013 – 08/2022: System Engineer – Engineering Division.
-            <br>KDDI Vietnam Corporation. Hanoi city, Vietnam</strong>
-            <br>IT infrastructure design and project implementation, typical projects:
-        </li>
-        <ul>
-            <li>Thin client system with 30 terminals. A biotechnology factory</li>
-            <li>Migration 7TB data of File server in 1 week with minimal disruption</li>
-            <li>Provide wireless LAN for entire warehouse. A logistics company</li>
-            <li>Hyper-V cluster with 02 node Dell server & storage. An US garment factory</li>
-            <li>Implement Alarm system, access control and CCTVs. Hanoi branch of Korean bank</li>
-            <li>Install & configure 02 vSAN ready node. A pharmaceutical factory</li>
-            <li>Provisioned 03 node of Dell HCI Vxrail and migration VM from existing environment. An Apple’s vendor manufacturing</li>
-            <li>Established Zero trust network access with Head office. An Internal’s IT project</li>
+        </p>
+        <h4>SKILLS & TECHNOLOGIES</h4>
+        
+        <p><ul>
+            <li>Operating Systems: Windows Server, Windows 10, Ubuntu, CentOS</li>
+            <li>Cloud, SaaS: AWS, MS Azure, MS Office 365</li>
+            <li>Virtualization: VMware vSphere, Microsoft Hyper-V</li>
+            <li>Backup software: Veritas BackupExec, Veeam Backup & Replication</li>
+            <li>Server and storage: DellEMC, HPE, QNAP, Synology</li>
+            <li>Firewall and switch: Cisco, Fortinet, Meraki, Aruba</li>
+            <li>Monitoring: Solarwinds, PRTG, Zabbix</li>
         </ul>
+        </p>
+        <h4>WORKING EXPERIENCE</h4>
+        
+        <p><ul>
+            <li><strong>08/2022 – 02/2024: System Admin – System Division.
+                <br>VinITIS JSC. Hanoi city, Vietnam</strong>
+                <br>Perform tasks that area essential for config, deploy and maintain IT systems across Private Cloud to Public Cloud, providing high availability, integrity and confidentiality
+            </li>
+            <ul>
+                <li>Collaborate with Dev team to integrate their projects into On-premise/Cloud environment</li>
+                <li>Automate the provisioning and configuration processes, from template to production-ready use</li>
+                <li>Hardening, patching system to meet Enterprise security's requirement</li>
+            </ul>
+        </p>
         <p>
-            <li><strong>08/2008 – 08/2013: System and Network Admin - IT Department.
-                <br>Brother Industries (Vietnam) Ltd. Hai Duong province, Vietnam</strong>
+            <li><strong>08/2013 – 08/2022: System Engineer – Engineering Division.
+                <br>KDDI Vietnam Corporation. Hanoi city, Vietnam</strong>
                 <br>IT infrastructure design and project implementation, typical projects:
             </li>
             <ul>
-                <li>System and network administrator to ensure safe and smooth IT working environments, uptime to 99.9%</li>
-                <li>Maintained documentation as well as procedure to comply organization’s policies</li>
-                <li>Manage a team, team size: 4 persons</li>
+                <li>Thin client system with 30 terminals. A biotechnology factory</li>
+                <li>Migration 7TB data of File server in 1 week with minimal disruption</li>
+                <li>Provide wireless LAN for entire warehouse. A logistics company</li>
+                <li>Hyper-V cluster with 02 node Dell server & storage. An US garment factory</li>
+                <li>Implement Alarm system, access control and CCTVs. Hanoi branch of Korean bank</li>
+                <li>Install & configure 02 vSAN ready node. A pharmaceutical factory</li>
+                <li>Provisioned 03 node of Dell HCI Vxrail and migration VM from existing environment. An Apple’s vendor manufacturing</li>
+                <li>Established Zero trust network access with Head office. An Internal’s IT project</li>
             </ul>
-</ul>
-    </p>
-    <h4>EDUCATION</h4>
-    <hr>
-    <p><strong>Ha Noi University of Science and Technology</strong>
-        <br>Specialty: Mathematics – Information Technology
-        <br>Degree: Bachelor
-        <br><br><strong>Udacity.com</strong>
-        <br>Course: Site Reliability Engineer, Cloud DevOps using Microsoft Azure</p>
-    <p><strong>Certificate</strong>
-        <ul>
-        <li>12/2023: AWS Certified Solutions Architect - Associate</li>
-        <li>07/2022: LPIC-1</li>
-        <li>10/2021: Fortinet NSE 3</li>
-        <li>09/2021: Azure Administrator Associate (AZ-104)</li>
-        <li>ITIL Foundation v4 (Complete course)</li>
-        <li>VMware vSphere 6.5: Install, Configure (Complete course)</li>
-        </ul>
-    </p>
-    <p id="visitor">You are visitor </p>
+            <p>
+                <li><strong>08/2008 – 08/2013: System and Network Admin - IT Department.
+                    <br>Brother Industries (Vietnam) Ltd. Hai Duong province, Vietnam</strong>
+                    <br>IT infrastructure design and project implementation, typical projects:
+                </li>
+                <ul>
+                    <li>System and network administrator to ensure safe and smooth IT working environments, uptime to 99.9%</li>
+                    <li>Maintained documentation as well as procedure to comply organization’s policies</li>
+                    <li>Manage a team, team size: 4 persons</li>
+                </ul>
+    </ul>
+        </p>
+        <h4>EDUCATION</h4>
+        
+        <p><strong>Ha Noi University of Science and Technology</strong>
+            <br>Specialty: Mathematics – Information Technology
+            <br>Degree: Bachelor
+            <br><br><strong>Udacity.com</strong>
+            <br>Course: Site Reliability Engineer, Cloud DevOps using Microsoft Azure</p>
+        <p><strong>Certificate</strong>
+            <ul>
+            <li>12/2023: AWS Certified Solutions Architect - Associate</li>
+            <li>07/2022: LPIC-1</li>
+            <li>10/2021: Fortinet NSE 3</li>
+            <li>09/2021: Azure Administrator Associate (AZ-104)</li>
+            <li>ITIL Foundation v4 (Complete course)</li>
+            <li>VMware vSphere 6.5: Install, Configure (Complete course)</li>
+            </ul>
+        </p>
+        <p id="visitor">You are visitor </p>
+    </div>
     </body>
 </html>
